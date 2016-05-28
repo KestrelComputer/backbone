@@ -38,7 +38,7 @@ The following table provides a key to the signal type column in the following si
 
 |Bussed?|Meaning|
 |:-----:|:------|
-|Y|The signal is bussed across all slots.  It is *not* open-drain.|
+|Y|The signal is bussed across all slots.|
 |N|The signal is not bussed; it is terminated in the backplane itself.|
 |D|The signal is daisy-chained to the adjacent slot.  It is not open-drain.|
 
