@@ -40,7 +40,7 @@ The following table provides a key to the signal type column in the following si
 |:-----:|:------|
 |Y|The signal is bussed across all slots.|
 |N|The signal is not bussed; it is terminated in the backplane itself.|
-|D|The signal is daisy-chained to the adjacent slot.  It is not open-drain.|
+|D|The signal is daisy-chained to the adjacent slot.|
 
 Some signals are inputs relative to the plug that you insert a card into.
 Some are outputs, while others can change roles at various times.
