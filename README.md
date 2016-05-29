@@ -63,7 +63,7 @@ The following table provides a key to the signal direction column in the followi
 
 **NOTES**
 
-1. This doesn't mean that the bus has to run at 50MHz; any reasonable clock can be used, as long as the plug-in cards can support the rate.  Ideally, designs should be tolerant of different frequencies.  A card must add wait-states as needed to slow things down to a more manageable speed.  In fact, considering the physical size of even the smallest backplanes, it'll be *exceptionally* difficult to pull off true 50MT/s performance levels. I think the best you'll be able to do is 25MT/s, and that only by paying extreme attention to detail.
+1. This doesn't mean that the bus has to run at 50MHz; any reasonable clock can be used, as long as the plug-in cards can agree on the rate.  Ideally, designs should be tolerant of different frequencies, but I'm not sure how to do that.  A card must add wait-states as needed to slow things down to a more manageable speed.  In fact, considering the physical size of even the smallest backplanes, it'll be *exceptionally* difficult to pull off true 50MT/s performance levels. I think the best you'll be able to do is 25MT/s, and that only by paying extreme attention to detail.
 
 ### Common MASTER/SLAVE Signals
 
@@ -160,4 +160,15 @@ The table below illustrates a typical 4-card backplane with 4 installed cards.
 |L|L|L|H|H|Card 2 can master the bus.|
 |L|L|L|L|H|Card 3 can master the bus.|
 |L|L|L|L|L|Backplane can master the bus.|
+
+**RULE 4.00**.  If a slot has no card, its BGP/BGN pins must be jumpered to provide ring continuity.
+
+**OBSERVATION 4.10**.  The more cards that are plugged into the backplane, the longer the Johnson counter.  Therefore, the greater the latency from one bus mastership to another for any given card.
+
+A bus master is allowed to hold onto the bus as long as it needs, or even wants to, as long as it respects the state of BCL#. Any other card that wants to be a master should assert this pin low.  This pin is open-drain, allowing multiple cards to drive it.  It must remain low as long as another bus master wants to conduct priority traffic. Otherwise, it's more polite to wait its turn.
+
+**RULE 5.00**.  A current bus master MUST make every effort it can to release its mastership as soon as possible when it detects BCL# low.  Otherwise, a card is capable of hogging the bus.
+
+**PERMISSION 5.10**.  A card MAY elect to ignore BCL#, but only if it's processing isochronous traffic, and only if offers a way for software to either turn this capability on or off, or otherwise allow for software tunable performance parameters.  For example, a video card may need to fetch 640 bytes of video data every horizontal scanline to provide a 256-color 640-dot display.  Aborting vido fetch bursts for any reason runs the risk of sparkle or other undesirable video artifacts.  However, if the user wants more time to be devoted to the CPU, the video circuitry should offer a way to cut the burst length to a manageable level.  For example, reducing the horizontal resolution, or maybe color depth.
+
 
