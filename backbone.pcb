@@ -4274,6 +4274,9 @@ Layer(1 "top")
 	Text[103.8236mm 36.7307mm 0 122 "COPYRIGHT 2016 SAMUEL A. FALVO II" "clearline"]
 	Text[103.8236mm 38.7627mm 0 122 "MOZILLA PUBLIC LICENSE V2.0" "clearline"]
 	Text[103.6966mm 42.4457mm 0 144 "PART OF THE KESTREL-3 COMPUTER PROJECT." "clearline"]
+	Text[410.00mil 1805.00mil 3 144 "https://hackaday.io/project/10035-kestrel-computer-project" "clearline"]
+	Text[4085.00mil 1770.00mil 0 144 "http://kestrelcomputer.github.io/kestrel/" "clearline"]
+	Text[275.00mil 2020.00mil 3 144 "https://hackaday.io/project/11928-backbone-bus" "clearline"]
 )
 Layer(2 "ground")
 (
@@ -4397,6 +4400,11 @@ Layer(6 "bottom")
 )
 Layer(7 "outline")
 (
+	Line[0.0000 1225.00mil 6000.00mil 1225.00mil 6.00mil 12.00mil "clearline"]
+	Line[6000.00mil 1225.00mil 6000.00mil 5000.00mil 6.00mil 12.00mil "clearline"]
+	Line[6000.00mil 5000.00mil 5.00mil 5000.00mil 6.00mil 12.00mil "clearline"]
+	Line[5.00mil 5000.00mil 0.0000 4995.00mil 6.00mil 12.00mil "clearline"]
+	Line[0.0000 4995.00mil 0.0000 1225.00mil 6.00mil 12.00mil "clearline"]
 )
 Layer(8 "spare")
 (
