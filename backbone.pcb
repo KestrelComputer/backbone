@@ -1773,6 +1773,24 @@ Element["" "AXIAL_LAY 300" "R11" "1K" 4655.00mil 3995.00mil 245.00mil 45.00mil 0
 
 	)
 
+Element["" "AXIAL_LAY 300" "R12" "1K" 118.2384mm 104.0417mm 245.00mil 45.00mil 0 100 ""]
+(
+	Attribute("device" "RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[0.0000 0.0000 55.00mil 30.00mil 61.00mil 30.00mil "1" "1" "square,edge2"]
+	Pin[300.00mil 0.0000 55.00mil 30.00mil 61.00mil 30.00mil "2" "2" "edge2"]
+	ElementLine [0.0000 0.0000 75.00mil 0.0000 10.00mil]
+	ElementLine [225.00mil 0.0000 300.00mil 0.0000 10.00mil]
+	ElementLine [75.00mil -25.00mil 225.00mil -25.00mil 10.00mil]
+	ElementLine [225.00mil -25.00mil 225.00mil 25.00mil 10.00mil]
+	ElementLine [225.00mil 25.00mil 75.00mil 25.00mil 10.00mil]
+	ElementLine [75.00mil 25.00mil 75.00mil -25.00mil 10.00mil]
+
+	)
+
 Element["" "SO14" "U2" "unknown" 108.0879mm 112.2598mm -20.00mil -60.00mil 0 100 ""]
 (
 	Attribute("device" "7474")
@@ -4038,7 +4056,6 @@ Layer(1 "top")
 	Line[2795.00mil 4305.00mil 3090.00mil 4305.00mil 6.00mil 12.00mil "clearline"]
 	Line[3090.00mil 4305.00mil 3190.00mil 4405.00mil 6.00mil 12.00mil "clearline"]
 	Line[3535.00mil 4405.00mil 3190.00mil 4405.00mil 6.00mil 12.00mil "clearline"]
-	Line[3570.00mil 4470.00mil 3535.00mil 4505.00mil 6.00mil 12.00mil "clearline"]
 	Line[3670.00mil 4470.00mil 3635.00mil 4505.00mil 6.00mil 12.00mil "clearline"]
 	Line[3635.00mil 4505.00mil 3560.00mil 4505.00mil 6.00mil 12.00mil "clearline"]
 	Line[3560.00mil 4505.00mil 3545.00mil 4520.00mil 6.00mil 12.00mil "clearline"]
@@ -4228,7 +4245,6 @@ Layer(1 "top")
 	Line[4285.00mil 4470.00mil 108.8472mm 113.5298mm 6.00mil 12.00mil "clearline"]
 	Line[108.8472mm 113.5298mm 110.7522mm 113.5298mm 6.00mil 12.00mil "clearline"]
 	Line[110.6914mm 108.4498mm 118.8802mm 108.4498mm 16.00mil 12.00mil "clearline"]
-	Line[118.8802mm 108.4498mm 4955.00mil 3995.00mil 16.00mil 12.00mil "clearline"]
 	Line[110.7522mm 113.5298mm 110.7603mm 4470.00mil 6.00mil 12.00mil "clearline"]
 	Line[110.7603mm 4470.00mil 4470.00mil 4470.00mil 16.00mil 12.00mil "clearline"]
 	Line[4470.00mil 4470.00mil 4470.00mil 108.4498mm 16.00mil 12.00mil "clearline"]
@@ -4269,6 +4285,11 @@ Layer(1 "top")
 	Line[4420.00mil 3430.00mil 4655.00mil 3195.00mil 6.00mil 12.00mil "clearline"]
 	Line[4420.00mil 3455.00mil 4430.00mil 3445.00mil 6.00mil 12.00mil "clearline"]
 	Line[4430.00mil 3445.00mil 4455.00mil 3445.00mil 6.00mil 12.00mil "clearline"]
+	Line[125.9124mm 101.5462mm 125.9213mm 101.5373mm 6.00mil 12.00mil "clearline"]
+	Line[4955.00mil 3995.00mil 125.8584mm 104.0417mm 16.00mil 12.00mil "clearline"]
+	Line[125.8585mm 104.1415mm 121.5501mm 108.4498mm 16.00mil 12.00mil "clearline"]
+	Line[121.5501mm 108.4498mm 118.8802mm 108.4498mm 16.00mil 12.00mil "clearline"]
+	Line[3570.00mil 4470.00mil 3535.00mil 4505.00mil 6.00mil 12.00mil "clearline"]
 	Text[103.8236mm 33.9367mm 0 166 "LAYOUT REVISION 0.0.1" "clearline"]
 	Text[103.8236mm 31.3967mm 0 166 "BACKBONE V0.0.1 BACKPLANE" "clearline"]
 	Text[103.8236mm 36.7307mm 0 122 "COPYRIGHT 2016 SAMUEL A. FALVO II" "clearline"]
@@ -4393,6 +4414,19 @@ Layer(6 "bottom")
 	Line[3620.00mil 4620.00mil 3865.00mil 4620.00mil 6.00mil 12.00mil "clearline"]
 	Line[3865.00mil 4620.00mil 3965.00mil 4520.00mil 6.00mil 12.00mil "clearline"]
 	Line[3965.00mil 4520.00mil 4000.00mil 4520.00mil 6.00mil 12.00mil "clearline"]
+	Line[3570.00mil 4470.00mil 3620.00mil 4520.00mil 6.00mil 12.00mil "clearline"]
+	Line[3620.00mil 4520.00mil 3925.00mil 4520.00mil 6.00mil 12.00mil "clearline"]
+	Line[118.2097mm 4095.00mil 118.2384mm 104.0417mm 6.00mil 12.00mil "clearline"]
+	Line[3925.00mil 4520.00mil 3950.00mil 4495.00mil 6.00mil 12.00mil "clearline"]
+	Line[118.2384mm 113.5366mm 118.2384mm 104.0417mm 6.00mil 12.00mil "clearline"]
+	Line[3950.00mil 4495.00mil 4200.00mil 4495.00mil 6.00mil 12.00mil "clearline"]
+	Line[4200.00mil 4495.00mil 4225.00mil 4520.00mil 6.00mil 12.00mil "clearline"]
+	Line[4225.00mil 4520.00mil 4225.00mil 4600.00mil 6.00mil 12.00mil "clearline"]
+	Line[4225.00mil 4600.00mil 4250.00mil 4625.00mil 6.00mil 12.00mil "clearline"]
+	Line[4250.00mil 4625.00mil 4630.00mil 4625.00mil 6.00mil 12.00mil "clearline"]
+	Line[4630.00mil 4625.00mil 4655.00mil 4600.00mil 6.00mil 12.00mil "clearline"]
+	Line[4655.00mil 4600.00mil 118.2384mm 113.5394mm 6.00mil 12.00mil "clearline"]
+	Line[4655.00mil 113.5408mm 4655.00mil 113.5408mm 6.00mil 12.00mil "clearline"]
 	Polygon("clearpoly")
 	(
 		[0.0000 0.0000] [6000.00mil 0.0000] [6000.00mil 5000.00mil] [0.0000 5000.00mil] 
@@ -4432,6 +4466,7 @@ NetList()
 		Connect("R8-2")
 		Connect("R9-2")
 		Connect("R11-2")
+		Connect("R12-2")
 		Connect("U1-14")
 		Connect("U2-4")
 		Connect("U2-10")
@@ -4741,6 +4776,7 @@ NetList()
 		Connect("CONN2-30")
 		Connect("CONN3-30")
 		Connect("CONN4-30")
+		Connect("R12-1")
 	)
 	Net("BGN4" "(unknown)")
 	(
