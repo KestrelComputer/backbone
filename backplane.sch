@@ -131,7 +131,7 @@ refdes=D1
 T 60250 45525 5 10 1 1 0 0 1
 value=1N4002
 T 60350 45375 5 10 0 0 0 0 1
-footprint=ALF300
+footprint=ALF300A
 }
 C 59050 42675 1 90 0 capacitor-1.sym
 {
@@ -166,7 +166,7 @@ refdes=D2
 T 62350 43750 5 10 1 1 0 0 1
 value=1N4002
 T 62450 43075 5 10 0 0 0 0 1
-footprint=ALF300
+footprint=ALF300A
 }
 C 58850 43175 1 0 0 lm317-1.sym
 {
