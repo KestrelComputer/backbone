@@ -9,7 +9,7 @@ Grid[500.000000 20.00mil 20.00mil 0]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[6.00mil 10.00mil 6.00mil 10.00mil 13.00mil 7.00mil]
-Flags("showdrc,nameonpcb,uniquename,clearnew,snappin")
+Flags("showdrc,nameonpcb,uniquename,newfullpoly")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,6.00mil,8.00mil,13.00mil,6.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -1455,23 +1455,6 @@ Element["" "JUMPER2" "J4" "unknown" 220.00mil 4575.00mil 110.00mil -50.00mil 3 1
 
 	)
 
-Element["" "BOURNE_3386P" "R10" "5K" 5560.00mil 2805.00mil 0.0000 0.0000 0 100 ""]
-(
-	Attribute("device" "VARIABLE_RESISTOR")
-	Attribute("manufacturer" "unknown")
-	Attribute("manufacturer_part_number" "unknown")
-	Attribute("vendor" "unknown")
-	Attribute("vendor_part_number" "unknown")
-	Pin[100.00mil 0.0000 36.00mil 20.00mil 42.00mil 20.00mil "3" "3" "thermal(5X)"]
-	Pin[0.0000 100.00mil 36.00mil 20.00mil 42.00mil 20.00mil "2" "2" ""]
-	Pin[-100.00mil 0.0000 36.00mil 20.00mil 42.00mil 20.00mil "1" "1" "thermal(5X)"]
-	ElementLine [200.00mil -200.00mil -200.00mil -200.00mil 10.00mil]
-	ElementLine [200.00mil 200.00mil 200.00mil -200.00mil 10.00mil]
-	ElementLine [-200.00mil 200.00mil 200.00mil 200.00mil 10.00mil]
-	ElementLine [-200.00mil -200.00mil -200.00mil 200.00mil 10.00mil]
-
-	)
-
 Element["" "TO220" "U3" "unknown" 5575.00mil 3835.00mil -150.00mil -230.00mil 1 100 ""]
 (
 	Attribute("device" "LM317")
@@ -1579,7 +1562,7 @@ Element["" "ALF300" "D1" "1N4002" 5420.00mil 4040.00mil 220.00mil -50.00mil 0 10
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
 	Pin[0.0000 0.0000 50.00mil 30.00mil 56.00mil 20.00mil "1" "1" "square,edge2"]
-	Pin[300.00mil 0.0000 100.00mil 30.00mil 106.00mil 20.00mil "2" "2" "edge2"]
+	Pin[300.00mil 0.0000 120.00mil 30.00mil 126.00mil 20.00mil "2" "2" "edge2"]
 	ElementLine [0.0000 0.0000 100.00mil 0.0000 10.00mil]
 	ElementLine [200.00mil 0.0000 300.00mil 0.0000 10.00mil]
 	ElementLine [100.00mil 0.0000 200.00mil -50.00mil 10.00mil]
@@ -1818,6 +1801,23 @@ Element["" "SO14" "U2" "unknown" 108.0879mm 112.2598mm -20.00mil -60.00mil 0 100
 	ElementLine [-155.00mil -170.00mil -25.00mil -170.00mil 10.00mil]
 	ElementLine [155.00mil -170.00mil 25.00mil -170.00mil 10.00mil]
 	ElementArc [0.0000 -170.00mil 25.00mil 25.00mil 0 180 10.00mil]
+
+	)
+
+Element["" "BOURNE_3386P" "R10" "5K" 5560.00mil 2805.00mil 0.0000 0.0000 0 100 ""]
+(
+	Attribute("device" "VARIABLE_RESISTOR")
+	Attribute("manufacturer" "unknown")
+	Attribute("manufacturer_part_number" "unknown")
+	Attribute("vendor" "unknown")
+	Attribute("vendor_part_number" "unknown")
+	Pin[100.00mil 0.0000 36.00mil 20.00mil 42.00mil 20.00mil "3" "3" ""]
+	Pin[0.0000 100.00mil 36.00mil 20.00mil 42.00mil 20.00mil "2" "2" "thermal(5X)"]
+	Pin[-100.00mil 0.0000 36.00mil 20.00mil 42.00mil 20.00mil "1" "1" "thermal(0X,5X)"]
+	ElementLine [200.00mil -200.00mil -200.00mil -200.00mil 10.00mil]
+	ElementLine [200.00mil 200.00mil 200.00mil -200.00mil 10.00mil]
+	ElementLine [-200.00mil 200.00mil 200.00mil 200.00mil 10.00mil]
+	ElementLine [-200.00mil -200.00mil -200.00mil 200.00mil 10.00mil]
 
 	)
 Layer(1 "top")
@@ -4123,24 +4123,6 @@ Layer(1 "top")
 	Line[2200.00mil 4670.00mil 2570.00mil 4670.00mil 6.00mil 12.00mil "clearline"]
 	Line[1200.00mil 4570.00mil 1570.00mil 4570.00mil 6.00mil 12.00mil "clearline"]
 	Line[2200.00mil 4570.00mil 2570.00mil 4570.00mil 6.00mil 12.00mil "clearline"]
-	Line[5575.00mil 3835.00mil 5575.00mil 4015.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5575.00mil 4015.00mil 5445.00mil 4015.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5445.00mil 4015.00mil 5445.00mil 4040.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5700.00mil 2525.00mil 5687.00mil 2525.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5687.00mil 2525.00mil 5687.00mil 3781.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5687.00mil 3781.00mil 5575.00mil 3781.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5575.00mil 3781.00mil 5575.00mil 3835.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5690.00mil 2355.00mil 5672.50mil 2355.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5672.50mil 2037.50mil 5672.50mil 2355.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5672.50mil 2037.50mil 5425.00mil 2037.50mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5425.00mil 1990.00mil 5425.00mil 2037.50mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5560.00mil 2905.00mil 5475.00mil 2905.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5475.00mil 2905.00mil 5475.00mil 3835.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5400.00mil 2525.00mil 5390.00mil 2525.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5390.00mil 2355.00mil 5390.00mil 2525.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5720.00mil 4040.00mil 5675.00mil 4040.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5675.00mil 3835.00mil 5675.00mil 4040.00mil 46.00mil 12.00mil "clearline,auto"]
-	Line[5675.00mil 4040.00mil 5675.00mil 4215.00mil 46.00mil 12.00mil "clearline,auto"]
 	Line[3635.00mil 1605.00mil 3715.00mil 1525.00mil 6.00mil 12.00mil "clearline"]
 	Line[3715.00mil 1525.00mil 3870.00mil 1525.00mil 16.00mil 12.00mil "clearline"]
 	Line[3870.00mil 1525.00mil 3870.00mil 4440.00mil 26.00mil 12.00mil "clearline"]
@@ -4290,6 +4272,27 @@ Layer(1 "top")
 	Line[125.8585mm 104.1415mm 121.5501mm 108.4498mm 16.00mil 12.00mil "clearline"]
 	Line[121.5501mm 108.4498mm 118.8802mm 108.4498mm 16.00mil 12.00mil "clearline"]
 	Line[3570.00mil 4470.00mil 3535.00mil 4505.00mil 6.00mil 12.00mil "clearline"]
+	Line[5425.00mil 1990.00mil 5525.00mil 2090.00mil 16.00mil 12.00mil "clearline"]
+	Line[5525.00mil 2090.00mil 5525.00mil 2190.00mil 16.00mil 12.00mil "clearline"]
+	Line[5525.00mil 2190.00mil 5690.00mil 2355.00mil 16.00mil 12.00mil "clearline"]
+	Line[5690.00mil 2355.00mil 5685.00mil 2350.00mil 6.00mil 12.00mil "clearline"]
+	Line[5425.00mil 2170.00mil 5425.00mil 2320.00mil 16.00mil 12.00mil "clearline"]
+	Line[5425.00mil 2320.00mil 5390.00mil 2355.00mil 16.00mil 12.00mil "clearline"]
+	Line[5390.00mil 2355.00mil 5390.00mil 2515.00mil 16.00mil 12.00mil "clearline"]
+	Line[5390.00mil 2515.00mil 5400.00mil 2525.00mil 16.00mil 12.00mil "clearline"]
+	Line[5690.00mil 2355.00mil 5690.00mil 2515.00mil 16.00mil 12.00mil "clearline"]
+	Line[5690.00mil 2515.00mil 5702.50mil 2527.50mil 6.00mil 12.00mil "clearline"]
+	Line[5420.00mil 4040.00mil 5575.00mil 3885.00mil 26.00mil 12.00mil "clearline"]
+	Line[5575.00mil 3885.00mil 5575.00mil 3835.00mil 26.00mil 12.00mil "clearline"]
+	Line[5675.00mil 4215.00mil 5675.00mil 3835.00mil 26.00mil 12.00mil "clearline"]
+	Line[5675.00mil 3835.00mil 5675.00mil 3840.00mil 6.00mil 12.00mil "clearline"]
+	Line[5675.00mil 4220.00mil 5675.00mil 114.1890mm 26.00mil 12.00mil "clearline"]
+	Line[5675.00mil 114.1890mm 145.3280mm 4542.20mil 26.00mil 12.00mil "clearline"]
+	Line[4885.00mil 3125.00mil 5485.00mil 2525.00mil 16.00mil 12.00mil "clearline"]
+	Line[5485.00mil 2525.00mil 5695.00mil 2525.00mil 16.00mil 12.00mil "clearline"]
+	Line[5475.00mil 3835.00mil 5475.00mil 3085.00mil 16.00mil 12.00mil "clearline"]
+	Line[5475.00mil 3085.00mil 5660.00mil 2900.00mil 16.00mil 12.00mil "clearline"]
+	Line[5660.00mil 2805.00mil 5660.00mil 2900.00mil 16.00mil 12.00mil "clearline"]
 	Text[103.8236mm 33.9367mm 0 166 "LAYOUT REVISION 0.0.1" "clearline"]
 	Text[103.8236mm 31.3967mm 0 166 "BACKBONE V0.0.1 BACKPLANE" "clearline"]
 	Text[103.8236mm 36.7307mm 0 122 "COPYRIGHT 2016 SAMUEL A. FALVO II" "clearline"]
@@ -4313,17 +4316,6 @@ Layer(5 "power")
 )
 Layer(6 "bottom")
 (
-	Line[5700.00mil 2355.00mil 5690.00mil 2355.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5700.00mil 2355.00mil 5700.00mil 2525.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5425.00mil 2355.00mil 5390.00mil 2355.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5425.00mil 2170.00mil 5425.00mil 2355.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5560.00mil 2905.00mil 5487.00mil 2905.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5487.00mil 2525.00mil 5487.00mil 2905.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5487.00mil 2525.00mil 5400.00mil 2525.00mil 6.00mil 12.00mil "clearline,auto"]
-	Line[5475.00mil 4215.00mil 5350.00mil 4215.00mil 26.00mil 12.00mil "clearline,auto"]
-	Line[5350.00mil 4215.00mil 5350.00mil 4817.80mil 26.00mil 12.00mil "clearline,auto"]
-	Line[5820.00mil 4215.00mil 5675.00mil 4215.00mil 26.00mil 12.00mil "clearline,auto"]
-	Line[5820.00mil 4215.00mil 5820.00mil 4817.80mil 26.00mil 12.00mil "clearline,auto"]
 	Line[3570.00mil 3170.00mil 3620.00mil 3120.00mil 6.00mil 12.00mil "clearline"]
 	Line[3620.00mil 3120.00mil 4265.00mil 3120.00mil 6.00mil 12.00mil "clearline"]
 	Line[4265.00mil 3120.00mil 4315.00mil 3170.00mil 6.00mil 12.00mil "clearline"]
@@ -4427,6 +4419,13 @@ Layer(6 "bottom")
 	Line[4630.00mil 4625.00mil 4655.00mil 4600.00mil 6.00mil 12.00mil "clearline"]
 	Line[4655.00mil 4600.00mil 118.2384mm 113.5394mm 6.00mil 12.00mil "clearline"]
 	Line[4655.00mil 113.5408mm 4655.00mil 113.5408mm 6.00mil 12.00mil "clearline"]
+	Line[5400.00mil 2525.00mil 5400.00mil 2545.00mil 16.00mil 12.00mil ""]
+	Line[5400.00mil 2545.00mil 5660.00mil 2805.00mil 16.00mil 12.00mil "clearline"]
+	Line[5660.00mil 2805.00mil 5657.50mil 2802.50mil 6.00mil 12.00mil "clearline"]
+	Line[5170.00mil 4995.00mil 5170.00mil 4365.00mil 26.00mil 12.00mil ""]
+	Line[5530.00mil 4365.00mil 5530.00mil 4995.00mil 26.00mil 12.00mil ""]
+	Line[5530.00mil 4995.00mil 5170.00mil 4995.00mil 26.00mil 12.00mil ""]
+	Line[5170.00mil 4365.00mil 5530.00mil 4365.00mil 26.00mil 12.00mil ""]
 	Polygon("clearpoly")
 	(
 		[0.0000 0.0000] [6000.00mil 0.0000] [6000.00mil 5000.00mil] [0.0000 5000.00mil] 
@@ -4448,6 +4447,8 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
+	Text[5835.00mil 4250.00mil 0 144 "+5V" "clearline"]
+	Text[4985.00mil 4845.00mil 0 144 "GND" "clearline"]
 )
 NetList()
 (
@@ -5039,7 +5040,7 @@ NetList()
 		Connect("CONN4-62")
 		Connect("CONN4-64")
 		Connect("R10-1")
-		Connect("R10-3")
+		Connect("R10-2")
 		Connect("T2-1")
 		Connect("U1-7")
 		Connect("U2-7")
@@ -5142,7 +5143,7 @@ NetList()
 		Connect("C2-1")
 		Connect("D2-1")
 		Connect("R9-1")
-		Connect("R10-2")
+		Connect("R10-3")
 		Connect("U3-1")
 	)
 	Net("WE" "(unknown)")
